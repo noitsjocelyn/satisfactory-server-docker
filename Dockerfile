@@ -1,6 +1,8 @@
 FROM cm2network/steamcmd:root
-#BUILD: docker build -t satisfactory .
-#RUN: mkdir data; docker run -p 15000:15000/udp -p 7777:7777/udp -p 15777:15777/udp -d --name=satisfactory -v $(pwd)/data:/home/steam/Satisfactory-dedicated satisfactory
+# Run:
+#     docker compose up -d
+#
+# Add `--build` to force rebuild
 
 ENV STEAMAPPID 1690800
 ENV STEAMAPP Satisfactory
